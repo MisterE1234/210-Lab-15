@@ -10,6 +10,8 @@ using namespace std;
 //Movie class definition: 
 class Movie {
 private:
+//private member variables:
+//3 variables to hold the writer, title, and year of the movie:
     string writer;
     string title;
     int year;
@@ -76,6 +78,7 @@ int main() {
 
     //read data from the file and populate the Movie objects
     for (int i = 0; i < SIZE; ++i) {
+        //temporary variables to hold the data read from the file
         string writer, title;
         int year;
         getline(inputFile, title);
